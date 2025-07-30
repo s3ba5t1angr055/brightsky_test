@@ -168,7 +168,7 @@ async def _fill_missing_fields(
             for row in await _weather(
                 conn,
                 min_date,
-                max_date,
+                last_date,
                 source_ids,
                 not_null=missing_fields,
                 not_null_or=partial,
